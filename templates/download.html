@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Generator</title>
+  <link href='https://fonts.googleapis.com/css?fam  ily=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+ <div class="login">
+	
+	<h1>Your History</h1>
+      <table class = "table table-dark" border="1.2" style="width: 350px;">
+         <thead>
+         {% for key, value in result.items() %}
+            <tr>
+               <td> {{ key }} </td>
+            </tr>
+         {% endfor %}
+         </thead>
+      </table>
+
+</div>
